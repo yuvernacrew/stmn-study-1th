@@ -1,1 +1,5 @@
-<h1>かまさん</h1>
+<h1>あなたの名前は<%=@user.username %></h1>
+
+<%= link_to '新規プロジェクト', new_project_path %>
+<%= link_to 'プロジェクト一覧', projects_path %>
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
